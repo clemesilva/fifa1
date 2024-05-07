@@ -1,12 +1,24 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 import "./App.css";
-import { Button } from "@nextui-org/react";
+
+import Contact from "./pages/Contact";
+import Navbar1 from "./components/Navbar";
+import Cards from "./pages/Cards";
+
 function App() {
   return (
-    <>
-      <h1 className="text bg-red-700"> sabee</h1>
-      <Button color="primary">nico</Button>
-      <h1 className="text bottom-2 bg-slate-500">qlao</h1>{" "}
-    </>
+    <div>
+      <BrowserRouter>
+        <Navbar1 />
+        <Routes>
+          <Route path="/fifa1/" element={<Cards />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/contacto" element={<Contact />} />
+          <Route path="/cards" element={<Cards />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
