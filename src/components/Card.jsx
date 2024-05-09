@@ -8,7 +8,7 @@ import {
   Image,
 } from "@nextui-org/react";
 import FormsCards from "./FormsCards";
-function Card_real({ formData }) {
+function Card_real(formData) {
   return (
     <Card
       className="max-w-[400px] mx-auto top-44"
@@ -34,11 +34,11 @@ function Card_real({ formData }) {
         <p>Player stats</p>
         <ul>
           <li>velocidad: {formData.velocidad} </li>
-          <li>ritmo: </li>
-          <li>tiro: </li>
-          <li>pase: </li>
-          <li>def: </li>
-          <li>fisico: </li>
+          <li>ritmo: {formData.ritmo} </li>
+          <li>tiro: {formData.pase} </li>
+          <li>pase: {formData.def} </li>
+          <li>def: {formData.fisico} </li>
+          <li>fisico: {formData.tiro} </li>
         </ul>
       </CardBody>
       <Divider />
