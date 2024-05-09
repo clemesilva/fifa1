@@ -7,7 +7,8 @@ import {
   Link,
   Image,
 } from "@nextui-org/react";
-function Card_real() {
+import FormsCards from "./FormsCards";
+function Card_real({ formData }) {
   return (
     <Card
       className="max-w-[400px] mx-auto top-44"
@@ -30,7 +31,15 @@ function Card_real() {
       </CardHeader>
       <Divider />
       <CardBody style={{ height: "130px" }}>
-        <p>Este wn siempre ha valido pico ahora se pegó un bune salto</p>
+        <p>Player stats</p>
+        <ul>
+          <li>velocidad: {formData.velocidad} </li>
+          <li>ritmo: </li>
+          <li>tiro: </li>
+          <li>pase: </li>
+          <li>def: </li>
+          <li>fisico: </li>
+        </ul>
       </CardBody>
       <Divider />
       <CardFooter>

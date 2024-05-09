@@ -9,7 +9,11 @@ import { Link } from "react-router-dom";
 
 export default function Navbar1() {
   return (
-    <Navbar>
+    <Navbar
+      style={{
+        backgroundColor: "yellow",
+      }}
+    >
       <NavbarBrand>
         <p className="font-bold text-inherit">CARDSIT</p>
       </NavbarBrand>
